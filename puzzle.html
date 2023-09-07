@@ -12,11 +12,11 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000000;
         }
 
         h1 {
-            background-color: #333;
+            background-color: #004149;
             color: #fff;
             padding: 10px 0;
         }
@@ -25,27 +25,33 @@
             padding: 20px;
         }
 
-       /* .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-        }*/
-
-        .iframe-container iframe {
-            width: 75%;
-            height: 75vh;
-            border: 2.5px solid #ff0505;
+       .iframe-container iframe {
+            max-width: 60%;
+            min-height: 80vh;
+            border: 2.5px solid #e5ff008a;
+            border-radius: 5px;
+        }
+        @media (max-width: 850px){
+            .iframe-container iframe{
+                width: 80%;
+                min-height: 60vh;
+            }
+        }
+        @media (max-width: 300px){
+            .iframe-container iframe{
+                width: 95%;
+                min-height: 50vh;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Test Webpage</h1>
+    <h1>iFrame Test Webpage</h1>
     <p>This is some dummy text above the iframe.</p>
     
     <div class="iframe-container">
-        <iframe src="https://jigsaw-puzzle.pages.dev/" frameborder="0" scrolling="yes">Loading ... </iframe>
+        <iframe src="http://127.0.0.1:5500/" frameborder="0" scrolling="yes">Loading ... </iframe>
     </div>
 
     <p>This is some dummy text below the iframe.</p>
