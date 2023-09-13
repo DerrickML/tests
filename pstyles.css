@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+h1 {
+    background-color: #004149;
+    color: #fff;
+    padding: 10px 0;
+}
+
+p {
+    padding: 20px;
+}
+
+iframe {
+    aspect-ratio: 1/1;
+    width: 50%;
+    min-width: 280px
+}
