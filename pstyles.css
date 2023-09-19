@@ -18,6 +18,12 @@ p {
 
 iframe {
     aspect-ratio: 1/1;
-    width: 50%;
+    width: 60.54%;
     min-width: 280px
+}
+
+@media (max-width: 991px) {
+    iframe {
+        display: none;
+    }
 }

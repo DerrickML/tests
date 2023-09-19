@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFrame - City Test Webpage</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
             background-color: #000000;
         }
 
@@ -21,28 +22,32 @@
             padding: 10px 0;
         }
 
-        p {
-            padding: 20px;
-        }
-
         iframe {
             aspect-ratio: 1/1;
             width: 55%;
+            margin: 0 auto; /* To center the iframe */
+            display: block; /* Since iframe is an inline element by default */
         }
     </style>
 </head>
 
-<body>
+<body class="text-center"> <!-- Added Bootstrap class for centering content -->
+
     <h1>iFrame - City Test Webpage</h1>
-    <p>This is some dummy text above the iframe.</p>
+    <p class="px-5">This is some dummy text above the iframe.</p> <!-- Added Bootstrap padding class -->
 
     <!-- With only Time/Rank -->
-    <iframe src="https://flipcard-time-rank.pages.dev/" allowfullscreen title="FlipCard Frame"></iframe>
-    
-    <!--With only Form -->
+    <iframe src="http://127.0.0.1:5501/index.html" allowfullscreen title="FlipCard Frame"></iframe>
+
+    <!-- With only Form -->
     <iframe src="https://flip-card-form.pages.dev/" allowfullscreen title="FlipCard Frame"></iframe>
 
-    <p>This is some dummy text below the iframe.</p>
-</body>
+    <p class="px-5">This is some dummy text below the iframe.</p> <!-- Added Bootstrap padding class -->
 
+    <!-- Bootstrap JS and Popper.js for Bootstrap's JavaScript components -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
